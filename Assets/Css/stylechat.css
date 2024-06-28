@@ -1,0 +1,409 @@
+/* Estilos gerais */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+    overflow-x: hidden;
+}
+
+:root {
+    font-size: 16px;
+}
+
+body {
+    color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+.container {
+    padding-top: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login {
+    margin-top: 50px;
+    object-fit: cover;
+    width: 100%;
+    max-width: 330px;
+    background-color: #1c0d3d;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.finalizar {
+    display: none;
+    height: 30px;
+    margin-right: 80px;
+    border: none;
+    background-color: white;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 100px;
+}
+
+.finalizar:hover {
+    background-color: #f2f2f2;
+    transform: scale(1.05);
+}
+
+.login > h2 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.login__form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.login__input {
+    border: none;
+    padding: 15px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    background-color: #ffffff;
+    color: #000000;
+    outline: none;
+    border-radius: 5px;
+}
+
+.login__input:focus {
+    outline: 2px solid #f2f2f2;
+}
+
+.login__button {
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    background-color: #ddd;
+    cursor: pointer;
+    color: #121212;
+}
+
+.login__button:hover {
+    background-color: #fff;
+}
+
+.chat {
+    width: 100%;
+    height: 100%;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.chat__messages {
+    padding: 30px 30px 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 100vw;
+}
+
+.chat__form {
+    background-color: #1c0d3d;
+    padding: 15px 20px;
+    align-items: center;
+    display: flex;
+    gap: 10px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    flex: 1;
+}
+
+#funcionar {
+    display: flex;
+    flex: 10;
+}
+
+.chat__input {
+    display: flex;
+    width: 500px;
+    border: none;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    outline: none;
+    margin-right: 10px;
+    color: #000000;
+    font-size: 1rem;
+}
+
+.chat__button {
+    padding-top: 5px;
+    border: none;
+    background: none;
+    color: #f2f2f2;
+    cursor: pointer;
+
+}
+
+.chat__button > span {
+    font-size: 1.8rem;
+    overflow: hidden;
+}
+
+.chat__messages {
+    padding: 10px;
+    width: 100%;
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-bottom: 15px;
+    line-height: 22px;
+    margin-bottom: 80px;
+    
+}
+
+main {
+    display: flex;
+    width: 100%;
+}
+
+.message--self-container, .message--other-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+.message--self {
+    background-color: #51a2ff;
+    color: #ffffff;
+    border-radius: 10px;
+    padding: 10px;
+    max-width: 60%;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto; /* Alinha à direita */
+}
+
+.message--other {
+    background-color: #f1f1f1;
+    color: black;
+    border-radius: 10px;
+    padding: 10px;
+    max-width: 60%;
+    width: 300px;
+    display: block;
+    flex-direction: column;
+    align-self: flex-start;
+}
+
+.message--name {
+    margin-bottom: 5px;
+    color: gold;
+    margin-left: auto;
+}
+
+.message--content {
+    word-wrap: break-word;  
+    margin-left: auto;
+}
+
+.message--self-container img {
+    margin-left: 10px;
+}
+
+.message--other-container img {
+    margin-right: 10px;
+}
+
+nav {
+    justify-content: center;
+    height: 80px;
+    width: 100%;
+    background-color: #1c0d3d;
+}
+
+.img-header {
+    max-height: 80px;
+    padding-bottom: 12px;
+}
+
+#texto-header {
+    font-size: 50px;
+}
+
+#nome {
+    font-size: 50px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: beige;
+    height: 80px;
+    margin-top: 20px;
+    padding: 0;
+    width: 100%;
+    background-color: #1c0d3d;
+    bottom: 0;
+    position: fixed;
+}
+
+#logo-principal {
+    width: 100px;
+    height: auto;
+    padding-left: 20px;
+}
+
+header {
+    position: fixed;
+    display: flex;
+    height: 100px;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    background-color: #1c0d3d;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#icone-usuario {
+    width: 100px;
+    margin-left: 8px;
+    height: auto;
+    padding-right: 20px;
+}
+
+#nome-site {
+    font-size: 40px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .login {
+        max-width: 90%;
+    }
+
+    .chat__input {
+        width: 70%;
+        font-size: 0.9rem;
+        padding: 12px; 
+    }
+
+    .chat__messages {
+        padding: 10px;
+    }
+
+    .message--self,
+    .message--other {
+        max-width: 80%;
+        width: auto;
+    }
+
+    header, footer {
+        height: 60px;
+    }
+
+    #nome-site {
+        font-size: 30px;
+    }
+
+    #logo-principal {
+        width: 80px; 
+    }
+
+    #icone-usuario {
+        width: 50px; 
+    }
+
+    .chat__form {
+        padding: 10px;
+        gap: 5px;
+    }
+
+    .message--self,
+    .message--other {
+        width: auto;
+        font-size: 0.8rem;
+        padding: 5px;
+    }
+
+    .message--content {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .chat__input {
+        width: calc(100% - 60px); 
+        font-size: 0.85rem;
+        padding: 10px; 
+    }
+
+    .login__input {
+        padding: 10px;
+        font-size: 0.75rem;
+    }
+
+    .login__button {
+        padding: 10px;
+        font-size: 0.75rem;
+    }
+
+    header, footer {
+        height: 60px;
+    }
+
+    #nome-site {
+        font-size: 24px;
+    }
+
+    #logo-principal {
+        width: 60px; 
+    }
+
+    #icone-usuario {
+        width: 40px; 
+    }
+
+    .chat__form {
+        padding: 5px;
+        gap: 5px;
+    }
+
+    .message--self,
+    .message--other {
+        width: auto;
+        font-size: 0.7rem;
+        padding: 5px;
+    }
+
+    .message--content {
+        font-size: 0.7rem;
+    }
+}

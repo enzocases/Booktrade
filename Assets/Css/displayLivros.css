@@ -1,0 +1,118 @@
+
+main {
+    margin-bottom: 100px;
+    margin-top: 20px;
+}
+
+.card {
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 200px);
+    grid-template-rows: auto auto auto auto;
+    justify-content: center;
+}
+
+.deleteButton {
+    border-radius: 10px;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+.deleteButton:hover {
+    -webkit-box-shadow: inset 10px 10px 300px -149px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: inset 10px 10px 300px -149px rgba(0, 0, 0, 0.75);
+    box-shadow: inset 10px 10px 300px -149px rgba(0, 0, 0, 0.75);
+
+    transition: 450ms;
+}
+
+.editButton {
+
+    border-radius: 10px;
+    padding: 5px;
+    margin-top: 5px;
+    margin-left: 3px;
+}
+
+.editButton:hover {
+    -webkit-box-shadow: inset 10px 10px 300px -149px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: inset 10px 10px 300px -149px rgba(0, 0, 0, 0.75);
+    box-shadow: inset 10px 10px 300px -149px rgba(0, 0, 0, 0.75);
+
+    transition: 450ms;
+}
+
+
+#botaoAdd {
+
+    border: 1px solid;
+    border-radius: 10px;
+    padding: 2px;
+    margin-left: 10px;
+    margin-top: 10px;
+
+    height: 430px;
+    width: 190px;
+
+    background-size: cover;
+    background-position: center;
+    background-color: white;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+
+}
+
+#botaoAdd:hover {
+    -webkit-box-shadow: 0px 0px 20px 5px rgba(28, 13, 61, 0.9);
+    -moz-box-shadow: 0px 0px 20px 5px rgba(28, 13, 61, 0.9);
+    box-shadow: 0px 0px 20px 5px rgba(28, 13, 61, 0.9);
+
+    border: none;
+
+    transition: 450ms;
+}
+
+/* Media Queries */
+@media screen and (max-width: 991px) {
+    .grid-container {
+        grid-template-columns: repeat(3, 200px);
+        grid-template-rows: auto auto auto;
+        justify-content: center;
+    }
+
+    .img-header {
+        height: 25px;
+        /* Altura reduzida para dispositivos móveis */
+    }
+
+    #texto-header {
+        font-size: 40px;
+       
+    }
+
+}
+
+@media screen and (max-width: 610px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 200px);
+        grid-template-rows: auto auto;
+        justify-content: center;
+    }
+    #texto-header {
+        font-size: 30px;
+       
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .grid-container {
+        grid-template-columns: repeat(1, 200px);
+        grid-template-rows: auto;
+        justify-content: center;
+    }
+}
