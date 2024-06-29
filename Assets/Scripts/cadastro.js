@@ -70,7 +70,7 @@ telefoneInput.addEventListener('keypress', () => {
         telefoneInput.value += ') '
     }
 
-    else if (telefonelength === 9) {
+    else if (telefonelength === 10) {
         telefoneInput.value += '-'
     }
     else if(telefonelength > 14){
