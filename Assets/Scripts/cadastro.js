@@ -73,8 +73,8 @@ telefoneInput.addEventListener('keypress', () => {
     else if (telefonelength === 9) {
         telefoneInput.value += '-'
     }
-    else if(telefonelength > 13){
-        telefoneInput.value = telefoneInput.value.substring(0,13)
+    else if(telefonelength > 14){
+        telefoneInput.value = telefoneInput.value.substring(0,14)
     }
 })
 
